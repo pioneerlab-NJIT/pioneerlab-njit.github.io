@@ -73,9 +73,9 @@
 }
 #header .subtitle{
   margin:.25rem 0 0;
-  font-weight:600;
+  /* font-weight:600; */
   color:#666;                  /* set your brand gray/hex here */
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 /* Mobile: stack logo above text */
@@ -88,5 +88,7 @@
   #header .brand-text{ text-align:center; }
 }
 
+#header .brand-row{ justify-content:flex-start; }
+#header{ text-align:left; }   /* prevents center text in some themes */
 
 
