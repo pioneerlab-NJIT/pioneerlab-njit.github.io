@@ -49,13 +49,8 @@
 }
 
 /* Layout the logo + text like your mockup */
-#header .brand-row{
-  display:flex;
-  align-items:center;          /* vertically center logo + text */
-  justify-content:center;      /* center the whole block; change to flex-start to left-align page */
-  gap:1.25rem;                 /* space between logo and text */
-  margin-bottom:0.5rem;
-}
+#header .brand-row{ justify-content:flex-start; }
+#header{ text-align:left; }   /* prevents center text in some themes */
 
 /* Logo size (tweak as you like) */
 #header .brand-logo img{
@@ -88,7 +83,6 @@
   #header .brand-text{ text-align:center; }
 }
 
-#header .brand-row{ justify-content:flex-start; }
-#header{ text-align:left; }   /* prevents center text in some themes */
+
 
 
