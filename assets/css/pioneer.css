@@ -48,4 +48,45 @@
   line-height: 1.2;
 }
 
+/* Layout the logo + text like your mockup */
+#header .brand-row{
+  display:flex;
+  align-items:center;          /* vertically center logo + text */
+  justify-content:center;      /* center the whole block; change to flex-start to left-align page */
+  gap:1.25rem;                 /* space between logo and text */
+  margin-bottom:0.5rem;
+}
+
+/* Logo size (tweak as you like) */
+#header .brand-logo img{
+  height:72px;                 /* try 64–96px */
+  width:auto;
+  display:block;
+}
+
+/* Title + subtitle on the right of the logo */
+#header .brand-text{ line-height:1.1; }
+#header .brand-title{
+  margin:0;
+  font-weight:800;
+  font-size:clamp(2.4rem, 6vw, 4.2rem);  /* responsive big title */
+}
+#header .subtitle{
+  margin:.25rem 0 0;
+  font-weight:600;
+  color:#666;                  /* set your brand gray/hex here */
+  font-size:clamp(1rem, 2.2vw, 1.5rem);
+}
+
+/* Mobile: stack logo above text */
+@media (max-width: 736px){
+  #header .brand-row{
+    flex-direction:column;
+    gap:.6rem;
+  }
+  #header .brand-logo img{ height:56px; }
+  #header .brand-text{ text-align:center; }
+}
+
+
 
