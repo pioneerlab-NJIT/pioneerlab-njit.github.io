@@ -40,7 +40,7 @@
   color: hsl(0 0% 20%);                             /* e.g., dark gray or your brand hex */
 
   /* WEIGHT (boldness) */
-  /* font-weight: 700;  */                          /* 600–700 = bold */
+  font-weight: 700;                            /* 600–700 = bold */
 
   /* Optional polish */
   margin-top: 0.25rem;
