@@ -75,7 +75,7 @@
   margin:.25rem 0 0;
   font-weight:600;
   color:#666;                  /* set your brand gray/hex here */
-  font-size:clamp(1rem, 2.2vw, 1.5rem);
+  font-size: 0.7rem;
 }
 
 /* Mobile: stack logo above text */
