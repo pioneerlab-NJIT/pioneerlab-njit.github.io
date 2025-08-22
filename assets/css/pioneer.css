@@ -10,7 +10,7 @@
 }
 
 #header h1.brand .brand-logo{
-  height:77px;           /* adjust to taste (44–64px works well) */
+  height:87px;           /* adjust to taste (44–64px works well) */
   width:auto;
   display:block;
 }
@@ -26,6 +26,6 @@
 
 /* Header Size */
 #header h1.brand span{
-  font-size:3.7rem;         /* ≈ 51px; adjust to taste */
+  font-size:5.7rem;         /* ≈ 51px; adjust to taste */
   line-height:1.05;
 }
