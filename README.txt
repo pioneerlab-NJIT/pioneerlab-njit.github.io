@@ -26,6 +26,7 @@ Credits:
 	Icons:
 		Font Awesome (fontawesome.io)
 
-	Other:
+	Others:
 		jQuery (jquery.com)
+
 		Responsive Tools (github.com/ajlkn/responsive-tools)
