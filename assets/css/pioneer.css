@@ -33,11 +33,11 @@
 /* Subtitle under the big header */
 #header p.subtitle{
   /* SIZE: pick one of these lines */
-  font-size: 1.7rem;         /* fixed size */
+  font-size: 1.5rem;         /* fixed size */
   /* font-size: clamp(1rem, 1.8vw, 1.4rem); */      /* responsive size */
 
   /* COLOR: replace with your brand color */
-  color: hsl(0 0% 60%);                             /* e.g., dark gray or your brand hex */
+  color: hsl(0 0% 20%);                             /* e.g., dark gray or your brand hex */
 
   /* WEIGHT (boldness) */
   /* font-weight: 700;  */                          /* 600–700 = bold */
