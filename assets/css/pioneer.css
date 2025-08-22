@@ -37,10 +37,10 @@
   /* font-size: clamp(1rem, 1.8vw, 1.4rem); */      /* responsive size */
 
   /* COLOR: replace with your brand color */
-  color: hsl(0 0% 30%);                             /* e.g., dark gray or your brand hex */
+  color: hsl(0 0% 50%);                             /* e.g., dark gray or your brand hex */
 
   /* WEIGHT (boldness) */
-  font-weight: 700;                            /* 600–700 = bold */
+  font-weight: 600;                            /* 600–700 = bold */
 
   /* Optional polish */
   margin-top: 0.25rem;
