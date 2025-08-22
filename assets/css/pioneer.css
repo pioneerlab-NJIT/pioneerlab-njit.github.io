@@ -1,1 +1,25 @@
 .pub-list{list-style:decimal;margin-left:1.25rem}.muted{opacity:.85}#header h1 a{text-transform:none}#header p{margin-top:-.5rem}
+
+/* Logo next to the big title */
+#header h1.brand a{
+  display:inline-flex;
+  align-items:center;
+  gap:0.75rem;           /* space between logo and text */
+  text-decoration:none;
+  line-height:1;
+}
+
+#header h1.brand .brand-logo{
+  height:56px;           /* adjust to taste (44–64px works well) */
+  width:auto;
+  display:block;
+}
+
+/* Tighten spacing around the big header */
+#header h1{ margin-bottom:0.25rem; }
+#header p{  margin-top:0; }
+
+/* Smaller logo on phones */
+@media (max-width: 736px){
+  #header h1.brand .brand-logo{ height:40px; }
+}
