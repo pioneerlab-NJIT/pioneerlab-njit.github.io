@@ -58,3 +58,8 @@
   line-height: 1.4;
 }
 
+#main header p.content-text {
+  font-style: normal;   /* cancel italic */
+  font-weight: 400;     /* regular weight */
+  color: #000;          /* or whatever you prefer */
+}
