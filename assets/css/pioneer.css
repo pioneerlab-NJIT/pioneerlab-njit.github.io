@@ -47,3 +47,14 @@
   letter-spacing: 0.2px;
   line-height: 1.2;
 }
+
+/* Content text */
+#header p.content-text {
+  font-size: 1.1rem;     /* adjust to taste */
+  color: hsl(0 0% 20%);  /* darker gray or black */
+  font-style: normal;    /* ensure NOT italic */
+  font-weight: 400;      /* regular weight */
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
