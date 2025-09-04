@@ -60,21 +60,40 @@
 }
 
 /* Figure configuration */
-#header .header-figure {
-  margin-top: 1rem;          /* space above image */
-  text-align: center;        /* center image + caption */
+/* Shared wrapper for paragraph + figure */
+#main header.intro-block {
+  max-width: 900px;    /* same width for both text and figure */
+  margin: 0 auto;      /* center within page */
+  padding: 0 1rem;     /* prevent edge collisions on mobile */
+  text-align: justify; /* keeps content neat */
 }
 
-#header .header-figure img {
-  max-width: 100%;           /* responsive scaling */
+/* Paragraph */
+#main header.intro-block .content-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+/* Figure */
+#main header.intro-block .content-figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#main header.intro-block .content-figure img {
+  max-width: 100%;    /* responsive, fits same width as text */
   height: auto;
-  border-radius: 8px;        /* optional: rounded corners */
+  border-radius: 8px; /* optional */
 }
 
-#header .header-figure figcaption {
+#main header.intro-block .content-figure figcaption {
   font-size: 0.9rem;
-  color: hsl(0 0% 40%);      /* softer gray caption */
+  color: #555;
   margin-top: 0.25rem;
-  font-style: italic;        /* typical for captions */
+  font-style: italic;
 }
 
