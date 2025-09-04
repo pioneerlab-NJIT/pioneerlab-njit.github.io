@@ -59,3 +59,22 @@
   text-align: justify;
 }
 
+/* Figure configuration */
+#header .header-figure {
+  margin-top: 1rem;          /* space above image */
+  text-align: center;        /* center image + caption */
+}
+
+#header .header-figure img {
+  max-width: 100%;           /* responsive scaling */
+  height: auto;
+  border-radius: 8px;        /* optional: rounded corners */
+}
+
+#header .header-figure figcaption {
+  font-size: 0.9rem;
+  color: hsl(0 0% 40%);      /* softer gray caption */
+  margin-top: 0.25rem;
+  font-style: italic;        /* typical for captions */
+}
+
