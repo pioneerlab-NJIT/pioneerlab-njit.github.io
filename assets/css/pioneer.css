@@ -62,7 +62,7 @@
 /* Figure configuration */
 /* Shared wrapper for paragraph + figure */
 #main header.intro-block {
-  max-width: 900px;    /* same width for both text and figure */
+  max-width: 1000px;    /* same width for both text and figure */
   margin: 0 auto;      /* center within page */
   padding: 0 1rem;     /* prevent edge collisions on mobile */
   text-align: justify; /* keeps content neat */
