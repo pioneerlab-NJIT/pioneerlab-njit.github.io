@@ -1,52 +1,80 @@
-.pub-list{list-style:decimal;margin-left:1.25rem}.muted{opacity:.85}#header h1 a{text-transform:none}#header p{margin-top:-.5rem}
-
-/* Logo next to the big title */
-#header h1.brand a{
-  display:inline-flex;
-  align-items:center;
-  gap:0.75rem;           /* space between logo and text */
-  text-decoration:none;
-  line-height:1;
+.pub-list {
+  list-style: decimal;
+  margin-left: 1.25rem;
 }
 
-#header h1.brand .brand-logo{
-  height:107px;           /* adjust to taste (44–64px works well) */
-  width:auto;
-  display:block;
+.muted {
+  opacity: .85;
+}
+
+#header h1 a {
+  text-transform: none;
+}
+
+#header p {
+  margin-top: -.5rem;
+}
+
+/* Logo next to the big title */
+#header h1.brand a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;           /* space between logo and text */
+  text-decoration: none;
+  line-height: 1;
+}
+
+#header h1.brand .brand-logo {
+  height: 107px !important;  /* fixed logo size */
+  width: auto !important;
+  display: block;
 }
 
 /* Tighten spacing around the big header */
-#header h1{ margin-bottom:0.25rem; }
-#header p{  margin-top:0; }
+#header h1 { margin-bottom: 0.25rem; }
+#header p  { margin-top: 0; }
 
-/* Smaller logo on phones */
-@media (max-width: 736px){
+/* REMOVE smaller logo on phones */
+/* @media (max-width: 736px){
   #header h1.brand .brand-logo{ height:40px; }
+} */
+
+/* Header Size (fixed) */
+#header h1.brand span {
+  font-size: 52px !important;   /* fixed */
+  line-height: 1.05 !important;
 }
 
-/* Header Size */
-#header h1.brand span{
-  font-size:4.7rem;         /* ≈ 51px; adjust to taste */
-  line-height:1.05;
-}
-
-/* Subtitle under the big header */
-#header p.subtitle{
-  /* SIZE: pick one of these lines */
-  font-size: 1.5rem;         /* fixed size */
-  /* font-size: clamp(1rem, 1.8vw, 1.4rem); */      /* responsive size */
-
-  /* COLOR: replace with your brand color */
-  color: hsl(0 0% 50%);                             /* e.g., dark gray or your brand hex */
-
-  /* WEIGHT (boldness) */
-  font-weight: 600;                            /* 600–700 = bold */
-
-  /* Optional polish */
+/* Subtitle under the big header (fixed) */
+#header p.subtitle {
+  font-size: 24px !important;   /* fixed */
+  color: hsl(0 0% 50%);         /* dark gray or brand hex */
+  font-weight: 600 !important;
   margin-top: 0.25rem;
   letter-spacing: 0.2px;
   line-height: 1.2;
 }
+
+/* ------------------- */
+/* NAVIGATION (always visible, fixed size) */
+/* ------------------- */
+#nav {
+  display: block !important;       /* force show even on mobile */
+  font-size: 18px !important;      /* fixed font size */
+  white-space: nowrap;             /* keep links on one line */
+  overflow-x: auto;                /* scroll sideways if too wide */
+}
+
+/* Prevent nav from disappearing on mobile */
+@media (max-width: 736px) {
+  #nav { 
+    display: block !important;
+  }
+}
+
+/* ------------------- */
+/* CONTENT (still responsive) */
+/* ------------------- */
 
 /* Content text */
 #main header p.content-text {
@@ -59,13 +87,12 @@
   text-align: justify;
 }
 
-/* Figure configuration */
 /* Shared wrapper for paragraph + figure */
 #main header.intro-block {
-  max-width: 1000px;    /* same width for both text and figure */
-  margin: 0 auto;      /* center within page */
-  padding: 0 1rem;     /* prevent edge collisions on mobile */
-  text-align: justify; /* keeps content neat */
+  max-width: 1000px;    /* keeps a neat reading width */
+  margin: 0 auto;       /* center within page */
+  padding: 0 1rem;      /* prevent edge collisions on mobile */
+  text-align: justify;
 }
 
 /* Paragraph */
@@ -85,9 +112,9 @@
 }
 
 #main header.intro-block .content-figure img {
-  max-width: 100%;    /* responsive, fits same width as text */
+  max-width: 100%;    /* responsive for content */
   height: auto;
-  border-radius: 8px; /* optional */
+  border-radius: 8px;
 }
 
 #main header.intro-block .content-figure figcaption {
@@ -96,4 +123,3 @@
   margin-top: 0.25rem;
   font-style: italic;
 }
-
