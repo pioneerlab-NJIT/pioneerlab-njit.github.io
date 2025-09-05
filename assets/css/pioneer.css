@@ -41,13 +41,13 @@
 
 /* Header Size (fixed) */
 #header h1.brand span {
-  font-size: 52px !important;   /* fixed */
+  font-size: 4.7rem !important;   /* fixed */
   line-height: 1.05 !important;
 }
 
 /* Subtitle under the big header (fixed) */
 #header p.subtitle {
-  font-size: 24px !important;   /* fixed */
+  font-size: 1.5rem !important;   /* fixed */
   color: hsl(0 0% 50%);         /* dark gray or brand hex */
   font-weight: 600 !important;
   margin-top: 0.25rem;
