@@ -17,8 +17,11 @@
           </a>
         </h1>
         <p class="subtitle">Physical Interaction, Collaboration, and Intelligent Robotics Lab</p>
+        
+        <!-- ✅ Updated Nav with toggle button -->
         <nav id="nav">
-          <ul>
+          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+          <ul class="nav-links">
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="team.html">Team</a></li>
@@ -34,40 +37,20 @@
         <div class="container">
           <header class="intro-block">
             <h2 style="font-size:27px;">Welcome to the PIONEER Lab at New Jersey Institute of Technology!</h2>
-            <p class="content-text">The PIONEER Lab advances human-centered interfaces that empower people with diverse abilities to effectively interact with robots across a range of hardware and autonomy levels. Our research focuses on designing versatile control paradigms, adapting robot support based on user workload, and developing structured training protocols to ensure reliable and consistent performance. By integrating intuitive interaction, intelligent autonomy, and immersive communication, we aim to foster seamless human–robot symbiosis in healthcare, daily living, and other real-world environments.</p>
+            <p class="content-text">
+              The PIONEER Lab advances human-centered interfaces that empower people with diverse abilities 
+              to effectively interact with robots across a range of hardware and autonomy levels. Our research 
+              focuses on designing versatile control paradigms, adapting robot support based on user workload, 
+              and developing structured training protocols to ensure reliable and consistent performance. By 
+              integrating intuitive interaction, intelligent autonomy, and immersive communication, we aim to 
+              foster seamless human–robot symbiosis in healthcare, daily living, and other real-world environments.
+            </p>
 
             <figure class="content-figure">
               <img src="images/Home.png" alt="PIONEER Lab Intro" />
               <!-- <figcaption>Exploring human–robot collaboration in real-world environments</figcaption> -->
             </figure>
-            
           </header>
-
-          <!--
-          <div class="row">
-            <div class="4u">
-              <section class="box">
-                <header><h3>Research</h3></header>
-                <p>Egocentric control, supervised autonomy, loco-manipulation, and HRI.</p>
-                <footer><a href="research.html" class="button alt">Learn more</a></footer>
-              </section>
-            </div>
-            <div class="4u">
-              <section class="box">
-                <header><h3>Team</h3></header>
-                <p>Meet our team at NJIT.</p>
-                <footer><a href="team.html" class="button alt">Meet the Team</a></footer>
-              </section>
-            </div>
-            <div class="4u">
-              <section class="box">
-                <header><h3>Publications</h3></header>
-                <p>Selected papers on teleoperation, training, and whole-body control.</p>
-                <footer><a href="publications.html" class="button alt">View papers</a></footer>
-              </section>
-            </div>
-          </div> 
-          -->
 
           <section>
             <header class="major"><h2>News</h2></header>
@@ -94,32 +77,22 @@
           </section>
           <ul class="copyright">
             <li>&copy; 2025 PIONEER Lab.</li>
-            <li>Design: <a href="https://html5up.net/dopetrope">Dopetrope</a> by <a href="https://html5up.net">HTML5 UP</a> (CC BY 3.0)</li>
+            <li>Design: <a href="https://html5up.net/dopetrope">Dopetrope</a> by 
+              <a href="https://html5up.net">HTML5 UP</a> (CC BY 3.0)</li>
           </ul>
         </div>
       </section>
     </div>
+
+    <!-- ✅ JS for nav toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const toggle = document.querySelector("#nav .nav-toggle");
+        const links = document.querySelector("#nav .nav-links");
+        toggle.addEventListener("click", () => {
+          links.classList.toggle("open");
+        });
+      });
+    </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
