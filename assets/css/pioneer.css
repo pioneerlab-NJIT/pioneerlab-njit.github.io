@@ -19,14 +19,14 @@
 #header h1.brand a {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;           /* space between logo and text */
+  gap: 0.75rem;
   text-decoration: none;
   line-height: 1;
 }
 
 #header h1.brand .brand-logo {
-  height: 107px !important;  /* fixed logo size */
-  width: auto !important;
+  height: clamp(60px, 12vw, 107px);  /* scales with viewport */
+  width: auto;
   display: block;
 }
 
@@ -34,68 +34,91 @@
 #header h1 { margin-bottom: 0.25rem; }
 #header p  { margin-top: 0; }
 
-/* REMOVE smaller logo on phones */
-/* @media (max-width: 736px){
-  #header h1.brand .brand-logo{ height:40px; }
-} */
-
-/* Header Size (fixed) */
+/* Header text scales */
 #header h1.brand span {
-  font-size: 4.7rem !important;   /* fixed */
-  line-height: 1.05 !important;
+  font-size: clamp(28px, 5vw, 52px);
+  line-height: 1.05;
 }
 
-/* Subtitle under the big header (fixed) */
+/* Subtitle scales */
 #header p.subtitle {
-  font-size: 1.5rem !important;   /* fixed */
-  color: hsl(0 0% 50%);         /* dark gray or brand hex */
-  font-weight: 600 !important;
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 600;
   margin-top: 0.25rem;
   letter-spacing: 0.2px;
   line-height: 1.2;
+  color: hsl(0 0% 50%);
 }
 
 /* ------------------- */
-/* NAVIGATION (always visible, fixed size) */
+/* NAVIGATION */
 /* ------------------- */
 #nav {
-  display: block !important;       /* force show even on mobile */
-  font-size: 18px !important;      /* fixed font size */
-  white-space: nowrap;             /* keep links on one line */
-  overflow-x: auto;                /* scroll sideways if too wide */
+  position: relative;
 }
 
-/* Prevent nav from disappearing on mobile */
-@media (max-width: 736px) {
-  #nav { 
-    display: block !important;
+#nav .nav-toggle {
+  display: none;          /* hidden on desktop */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#nav .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav .nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* On small screens → dropdown */
+@media (max-width: 768px) {
+  #nav .nav-toggle {
+    display: block;
+  }
+  #nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+  }
+  #nav .nav-links.open {
+    display: flex;
   }
 }
 
 /* ------------------- */
-/* CONTENT (still responsive) */
+/* CONTENT (responsive) */
 /* ------------------- */
-
-/* Content text */
 #main header p.content-text {
-  font-size: 1.1rem;    
-  color: #000;          
-  font-style: normal;   
-  font-weight: 400;     
+  font-size: 1.1rem;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
   margin-top: 0.5rem;
   line-height: 1.4;
   text-align: justify;
 }
 
-/* Shared wrapper for paragraph + figure */
 #main header.intro-block {
-  max-width: 1000px;    /* keeps a neat reading width */
-  margin: 0 auto;       /* center within page */
-  padding: 0 1rem;      /* prevent edge collisions on mobile */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
   text-align: justify;
 }
 
-/* Paragraph */
 #main header.intro-block .content-text {
   font-size: 1.1rem;
   font-weight: 400;
@@ -105,14 +128,13 @@
   font-style: normal;
 }
 
-/* Figure */
 #main header.intro-block .content-figure {
   margin: 1rem 0;
   text-align: center;
 }
 
 #main header.intro-block .content-figure img {
-  max-width: 100%;    /* responsive for content */
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
