@@ -147,7 +147,7 @@
 
 /* Make the profile photo larger */
 .profile-photo {
-  width: 200px;         /* Increase this for a bigger photo */
+  width: 220px;         /* Increase this for a bigger photo */
   height: auto;
   border-radius: 10px;  /* Rounded corners for a softer look */
   box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle shadow */
@@ -155,24 +155,24 @@
 
 /* Text styling for name, title, and link */
 .pi-name {
-  font-size: 1.5rem;    /* larger name */
+  font-size: 1.6rem;    /* larger name */
   margin-bottom: 0.3rem;
 }
 
 .pi-title {
-  font-size: 1.1rem;    /* slightly larger than normal text */
+  font-size: 1.6rem;    /* slightly larger than normal text */
   color: #444;          /* subtle gray tone */
   margin-bottom: 0.6rem;
 }
 
 .pi-link a {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #d6001c;       /* NJIT red accent (optional) */
   text-decoration: none;
 }
 
-.pi-link a:hover {
-  text-decoration: underline;
-}
+/* .pi-link a:hover {
+  text-decoration: underline;   /* add underline to the Personal Website 
+} */
 
