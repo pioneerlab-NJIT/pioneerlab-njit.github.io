@@ -137,3 +137,20 @@
   margin-top: 0.25rem;
   font-style: italic;
 }
+
+/* Figure for team */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem; /* space between photo and text */
+}
+
+.profile-photo {
+  width: 140px;        /* adjust as needed */
+  height: auto;
+  border-radius: 8px;  /* rounded corners */
+}
+
+.profile-text {
+  flex: 1;
+}
