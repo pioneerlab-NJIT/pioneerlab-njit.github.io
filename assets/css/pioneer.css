@@ -138,19 +138,41 @@
   font-style: italic;
 }
 
-/* Figure for team */
+/* Figure for the team */
 .profile {
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem; /* space between photo and text */
+  align-items: center;
+  gap: 2rem;
 }
 
+/* Make the profile photo larger */
 .profile-photo {
-  width: 140px;        /* adjust as needed */
+  width: 200px;         /* Increase this for a bigger photo */
   height: auto;
-  border-radius: 8px;  /* rounded corners */
+  border-radius: 10px;  /* Rounded corners for a softer look */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle shadow */
 }
 
-.profile-text {
-  flex: 1;
+/* Text styling for name, title, and link */
+.pi-name {
+  font-size: 1.5rem;    /* larger name */
+  margin-bottom: 0.3rem;
 }
+
+.pi-title {
+  font-size: 1.1rem;    /* slightly larger than normal text */
+  color: #444;          /* subtle gray tone */
+  margin-bottom: 0.6rem;
+}
+
+.pi-link a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d6001c;       /* NJIT red accent (optional) */
+  text-decoration: none;
+}
+
+.pi-link a:hover {
+  text-decoration: underline;
+}
+
