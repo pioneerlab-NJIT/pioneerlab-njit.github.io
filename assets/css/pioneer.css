@@ -155,18 +155,18 @@
 
 /* Text styling for name, title, and link */
 .pi-name {
-  font-size: 1.6rem;    /* larger name */
+  font-size: 1.5rem;    /* larger name */
   margin-bottom: 0.3rem;
 }
 
 .pi-title {
-  font-size: 1.6rem;    /* slightly larger than normal text */
+  font-size: 1.2rem;    /* slightly larger than normal text */
   color: #444;          /* subtle gray tone */
   margin-bottom: 0.6rem;
 }
 
 .pi-link a {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #d6001c;       /* NJIT red accent (optional) */
   text-decoration: none;
