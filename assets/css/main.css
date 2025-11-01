@@ -1574,6 +1574,24 @@ input, select, textarea {
 		padding: 2.75em 1.75em 2.75em 1.75em;
 	}
 
+	/* ↓ Adjust spacing between .box sections ↓ */
+	.box {
+	  padding: 1.5em 1.5em !important;   /* reduce internal padding (height of each block) */
+	  margin-bottom: 1.25rem !important; /* reduce space between blocks */
+	}
+	
+	.box + .box {
+	  margin-top: 1.25rem !important;    /* ensures blocks stack closer vertically */
+	}
+	
+	/* Optional: apply tighter spacing only on Publications page */
+	body.publications .box {
+	  padding: 1.25em 1.25em !important;
+	  margin-top: 1rem !important;
+	  margin-bottom: 1rem !important;
+	}
+	/* ↓ Adjust spacing between .box sections ↓ */
+
 		.box .image.featured {
 			position: relative;
 			width: auto;
