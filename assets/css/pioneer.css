@@ -180,12 +180,12 @@
 .research-item {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 2rem;
 }
 
 .research-image {
-  width: 180px;
-  height: 120px;
+  width: 220px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
