@@ -207,4 +207,66 @@
   }
 }
 
+/* ===== Publications layout ===== */
+
+.pub-year {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+
+/* Individual publication block */
+.pub-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Title line */
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.3rem;
+}
+
+/* Author line */
+.pub-authors {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+/* Venue line */
+.pub-venue {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+/* Links line */
+.pub-links a {
+  font-size: 1rem;
+  color: #d62828; /* NJIT red */
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
 
