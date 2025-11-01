@@ -176,3 +176,35 @@
   text-decoration: underline;   /* add underline to the Personal Website 
 } */
 
+/* Theaser figure for research */
+.research-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.research-image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.research-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .research-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .research-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
