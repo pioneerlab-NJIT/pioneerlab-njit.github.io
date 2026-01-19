@@ -143,6 +143,12 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Remove extra space after the last person in each section */
+section.box .profile:last-child {
+  margin-bottom: 0;
 }
 
 /* Make the profile photo larger */
@@ -269,5 +275,6 @@
 .pub-links a:hover {
   text-decoration: underline;
 }
+
 
 
