@@ -276,5 +276,31 @@ section.box .profile:last-child {
   text-decoration: underline;
 }
 
+/* Images displayed below a news item */
+.news-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.news-gallery figure {
+  margin: 0;
+}
+
+.news-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Stack images on small screens */
+@media screen and (max-width: 736px) {
+  .news-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
